@@ -112,14 +112,14 @@ h3 {
 }
 
 .background-third::after {
-  content: '';
-  position: absolute;
-  top: 100%;
-  left: calc(50% - 30px);
-  background: #D9D8D6;
-  width: 60px;
-  height: 20px;
-  clip-path: polygon(0 0, 100% 0, 50% 100%);
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: calc(50% - 10px);
+    border-top: 20px solid #D9D8D6;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    margin-left: -8px;   
 }
 
 .background-fourth {
@@ -260,9 +260,18 @@ h3 {
 }
 
 .twins-active:after {
-    background-color: #40BFE2 !important;
     border-bottom-right-radius: 0px;
     border-top-right-radius: 0px;
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: calc(50%);
+    border-top: 8px solid #40BFE2;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    margin-left: -8px;   
+
+/*
     content: '';
     position: absolute;
     top: 100%;
@@ -270,6 +279,7 @@ h3 {
     width: 20px;
     height: 10px;
     clip-path: polygon(0 0, 100% 0, 50% 100%);
+*/
 }
 
 .twins-inactive {
